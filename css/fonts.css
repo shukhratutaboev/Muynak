@@ -1,0 +1,19 @@
+@font-face {
+    src: url(../fonts/rainer.woff);
+    font-family: 'Rainer';
+}
+
+@font-face {
+    src: url(../fonts/montserrat.woff2);
+    font-family: 'Montserrat';
+}
+
+@font-face {
+    src: url(../fonts/spectral.woff2);
+    font-family: 'Spectral';
+}
+
+@font-face {
+    src: url(../fonts/forum.woff2);
+    font-family: 'Forum';
+}

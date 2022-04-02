@@ -1,0 +1,676 @@
+div::-moz-selection, button::-moz-selection, section::-moz-selection, svg::-moz-selection {
+    background: transparent !important;
+}
+
+div::selection, button::selection, section::selection, svg::selection {
+    background: transparent !important;
+}
+
+a {
+    outline: none;
+}
+
+html {
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Spectral', serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    -webkit-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+
+a:hover {
+    opacity: .5;
+}
+
+/* NAV HEADER */
+
+.header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  color: #fff;
+  z-index: 4;
+  font-size: 20px;
+}
+
+.header-index {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  color: #fff;
+  z-index: 4;
+  font-size: 20px;
+}
+
+.header-logo {
+  font-family: 'Forum';
+  text-transform: uppercase;
+}
+
+.header-stories {
+  font-family: 'Forum';
+  text-transform: uppercase;
+}
+
+.header-links {
+    font-family: 'Forum';
+    font-size: 60px;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header-link {
+    color : #fff;
+    text-decoration: none;
+}
+
+.header-nav {
+    font-family: 'Forum';
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav-index {
+    font-family: 'Montseratt', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 800px;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.header-navItem {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+	transition: opacity .5s ease;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+/*  border: 1px solid white;*/
+  padding: 10px 15px;
+}
+
+/*.header-navItem:after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.header-navItem:hover:after {
+    width: 100%;
+}*/
+
+.header-navItem:hover {
+    opacity: .5;
+}
+
+/* VIDEO COVER */
+
+.video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+.bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -99;
+}
+
+video {
+  zoom: 0.5;
+}
+
+.videoCover {
+  position: relative;
+  color: white;
+  width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.coverTitleBlock {
+  width: 90%;
+  max-width: 1400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: 'Forum', sans-serif;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  text-transform: uppercase;
+}
+
+.coverTitleBlock .title {
+  font-size: 200px;
+  /* margin-top: 30px; */
+}
+
+.coverAuthors {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    line-height: 1.4;
+}
+
+.coverSubtl {
+  font-family: 'Spectral', serif;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  max-width: 800px;
+  line-height: 1.2;
+  width: 100%;
+}
+
+/* SECTIONS */
+
+section {
+  position: relative;
+  width: 100%;
+  padding: 60px 30px 100px;
+}
+
+.section1 {
+  background-color: #DFC980;
+  color: black;
+}
+
+.section2 {
+  background-color: rgb(232, 232, 232);
+  color: black;
+}
+
+.section3 {
+  background-color: #2F80ED;
+  color: white;
+}
+
+.lastSection {
+  padding-bottom: 150px;
+}
+
+/* ARTICLE */
+
+.content {
+    width: 100%;
+    /* padding: 50px 30px 0; */
+}
+
+.subTitle {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 420px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text {
+    margin: 50px auto;
+    width: 90%;
+    font-size: 24px;
+    max-width: 900px;
+    line-height: 1.4;
+}
+
+.textTitle {
+  margin-top: 100px;
+  font-family: 'Forum', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 200px;
+  letter-spacing: 5px;
+}
+
+.textSubTitle {
+  font-family: 'Forum', sans-serif;
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+  font-size: 24px;
+  margin: 80px auto 0;
+}
+
+.textLarge {
+    font-size: 36px;
+}
+
+.textSmall {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 900px;
+    padding-right: 100px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.image {
+    max-width: 1200px;
+    width: 100%;
+    display: block;
+    margin: 1% auto;
+}
+
+.images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.images-child {
+    /* width: auto;
+    height: 100%; */
+    margin: 10px;
+}
+
+.images-two-child {
+    width: 49%;
+    height: 100%;
+    margin: 10px;
+}
+
+.images-more-child {
+    width: 33%;
+    height: 100%;
+    margin: 10px;
+}
+
+/* FOOTER */
+
+.c {
+  position: absolute;
+  z-index: 1;
+  padding-top: 200px;
+  left: 20px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 50px;
+  line-height: 1.3;
+}
+
+.kruzhokLink {
+  border-bottom: 1px solid white;
+}
+
+.white {
+  color: white;
+  border-color: white;
+}
+
+.black {
+  color: black;
+  border-color: black;
+}
+
+/* MEDIA QUIRIES */
+
+@media (max-width: 1200px) {
+    .coverTitleBlock .title {
+      font-size: 120px;
+      margin-top: 20px;
+    }
+
+    .textTitle {
+      font-size: 72px;
+    }
+
+    .header-links {
+      font-size: 48px;
+    }
+}
+
+@media (max-width: 801px) {
+    .c {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .coverSubtl {
+      font-size: 24px;
+    }
+
+    .images {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .images-more-child, .images-two-child {
+      width: 100%;
+      margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+  .video-index {
+      display: none;
+  }
+
+  .bg {
+    background-image: url(../images/6.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header-nav-index {
+      justify-content: flex-start;
+      margin-top: 30px;
+  }
+
+  .header-index {
+    flex-direction: column;
+  }
+
+  .header-links {
+    font-size: 36px;
+  }
+
+  .title {
+      font-size: 48px;
+  }
+
+  .coverTitleBlock .title {
+    font-size: 48px;
+    margin-top: 20px;
+  }
+
+  .coverSubtl {
+    font-size: 24px;
+  }
+
+  .textTitle {
+    font-size: 48px;
+  }
+
+  .title-block {
+      margin-top: 20px;
+  }
+
+  .subTitle {
+      font-size: 14px;
+      margin-top: 10px;
+  }
+
+  .text {
+      margin: 20px auto;
+      width: 100%;
+  }
+
+  .textLarge {
+      font-size: 18px;
+  }
+
+  .textSmall {
+      font-size: 12px;
+      line-height: 1.4;
+      padding-right: 0;
+  }
+
+  .images {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+  }
+
+  .images-child {
+      width: 100%;
+  }
+
+  .images-more-child, .images-two-child {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+    section {
+      padding: 30px 20px 80px;
+    }
+
+    .menu {
+        font-size: 12px;
+    }
+
+    .menu a {
+        margin-right: 5px;
+    }
+
+    .nav span {
+        margin: 0 2px;
+    }
+
+    .header-navItem {
+      font-size: 12px;
+      margin: 3px;
+      padding: 7px;
+    }
+
+    .header-links {
+      font-size: 24px;
+      line-height: 2;
+    }
+
+    .header-stories {
+      font-family: 'Forum', sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .coverTitleBlock .title {
+      font-size: 36px;
+      margin-top: 10px;
+    }
+
+    .textTitle {
+      font-size: 36px;
+      text-align: left;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    .textSubTitle {
+      text-align: left;
+      line-height: 1.2;
+      font-size: 18px;
+      margin: 40px 0 0px;
+    }
+
+    .coverSubtl {
+      font-size: 18px;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .title-block {
+        margin-top: 20px;
+    }
+
+    .subTitle {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .images-child {
+      margin: 10px 0;
+    }
+
+    .images-more-child, .images-two-child {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .c {
+      width: 80%;
+    }
+}
+
+@media (max-width: 360px) {
+  .header-nav-index {
+    margin-top: 10px;
+  }
+
+  .header-nav-index .header-navItem {
+    font-size: 8px !important;
+  }
+
+  .coverSubtl {
+    font-size: 14px;
+  }
+
+  .coverAuthors {
+    font-size: 12px;
+  }
+
+  .c {
+    font-size: 14px;
+  }
+
+  .header-logo {
+    font-size: 18px;
+  }
+
+  .header-stories {
+    font-size: 10px;
+  }
+
+  .textTitle {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .header-links {
+    font-size: 18px;
+    line-height: 2;
+  }
+}
+
+/* FADEIN ANIMATION */
+
+@media (min-width: 1024px) {
+    .videoCover, .bg {
+        background-image: none !important;
+        background-color: #DFC980;
+    }
+
+    .video, .video-index, .overlay {
+        -webkit-animation: fadeIn 1.5s;
+        animation: fadeIn 1.5s;
+    }
+
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        70% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        70% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
