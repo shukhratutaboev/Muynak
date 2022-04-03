@@ -56,7 +56,7 @@ body {
 
 .cover-title {
     color: white;
-    font-size: 200px;
+    font-size: 100px;
     font-family: 'Forum', sans-serif;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -74,7 +74,7 @@ body {
 
 
 .description-title {
-    font-size: 60px;
+    font-size: 30px;
     max-width: 500px;
     text-transform: uppercase;
     text-align: center;
